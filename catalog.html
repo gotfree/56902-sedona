@@ -7,14 +7,14 @@
   <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
+                <a class="main-header-logo" href="index.html">
                     <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сервиса поиска отелей Sedona">
                 </a>
                 <ul class="site-navigation">
                     <li><a href="">Информация</a></li>
                     <li><a href="">Фото и видео</a></li>
                     <li><a href="">Карта штата</a></li>
-                    <li><a href="">Гостиницы</a></li>
+                    <li class="current-page"><a>Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,18 +29,20 @@
 
             <section class="filter-info">
                 <h2 class="visually-hidden">Инфо фильтра</h2>
-                <div class="filter-search-results">
+                <p class="filter-search-results">
                     <b>найдено:</b>
                     <span>3</span>
-                </div>
+                </p>
 
                 <div class="filter-sort">
-                    <span>сортировка:</span>
-                    <p class="sort-list">
-                        <a class="sort-measure">по цене</a>
-                        <a class="sort-measure">по типу</a>
-                        <a class="sort-measure">по рейтингу</a>
-                    </p>
+                    <p>сортировка:</p>
+                    <ul class="sort-list">
+                        <li class="sort-measure"><a href=""></a></li>
+                        <li class="sort-measure"><a href=""></a></li>
+                        <li class="sort-measure"><a href=""></a></li>
+                        <li class="sort-measure"><a href="">по возрастанию</a></li>
+                        <li class="sort-measure"><a href="">по убыванию</a></li>
+                    </ul>
                 </div>
 
                 <div class="filter-rank">
