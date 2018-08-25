@@ -82,19 +82,23 @@
                 <h2 class="visually-hidden">поиск гостиницы в Седоне</h2>
                 <b>Заинтересовались?</b>
                 <p>укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-                <form method="get" class="booking-form">
+                <form action="https://echo.htmlacademy.ru" method="get" class="booking-form">
                     <a href="#" class="button booking-button">поиск гостиницы в Седоне</a>
                     <p>
                         <label for="entry-date-field">Дата заезда:</label>
-                        <input id="entry-date-field" type="date" name="date" value="2017-04-24">
+                        <input id="entry-date-field" type="text" name="checkin-date">
+                        <button class="visually-hidden" type="button">Выбрать дату</button>
                     </p>
                     <p>
                         <label for="exit-date-field">Дата выезда:</label>
-                        <input id="exit-date-field" type="date" name="date" value="2017-07-04">
+                        <input id="exit-date-field" type="text" name="checkout-date">
+                        <button class="visually-hidden" type="button">Выбрать дату</button>
                     </p>
                     <p>
-                        <label for="grown-field">Взрослые:</label><input id="grown-field" type="number" min="1" max="10" step="1">
-                        <label for="children-field">Дети:</label><input id="children-field" type="number" min="0" max="10" step="1">
+                        <label for="grown-field">Взрослые:</label>
+                        <input id="grown-field" type="number" name="grown" min="1" max="10" step="1">
+                        <label for="children-field">Дети:</label>
+                        <input id="children-field" type="number" name="children" min="0" max="10" step="1">
                     </p>
                     <p><input type="submit" value="Найти"></p>
                 </form>

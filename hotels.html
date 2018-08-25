@@ -24,34 +24,44 @@
 
             <section class="filter">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
-                <form method="get" class="inner-booking-form">
-                    <div>
-                        <p><input id="swimming-pool-field" type="checkbox" name="infrastructure" value="swimming-pool" checked>
-                        <label for="swimming-pool-field">Бассейн</label></p>
-                        <p><input id="parking-field" type="checkbox" name="infrastructure" value="parking">
-                        <label for="parking-field">Парковка</label></p>
-                        <p><input id="wi-fi-field" type="checkbox" name="infrastructure" value="wi-fi">
-                        <label for="wi-fi-field">Wi-Fi</label></p>
-                    </div>
-                    <div>
-                        <p><input id="hotel-field" type="checkbox" name="house-type" value="hotel" checked>
-                        <label for="hotel-field">Гостиница</label></p>
-                        <p><input id="motel-field" type="checkbox" name="house-type" value="motel" checked>
-                        <label for="motel-field">Мотель</label></p>
-                        <p><input id="apartments-field" type="checkbox" name="house-type" value="apartments" checked>
-                        <label for="apartments-field">Апартаменты</label></p>
-                    </div>
-                    <div>
-                        <p>
-                            <label for="pricing-field">Стоимость в сутки(р):</label>
-                            <input id="pricing-field" type="range" min="1" max="10">
-                            <span>от: <span></span></span>
-                            <span>до: <span></span></span>
-                        </p>
-                        <p>
-                            <input type="submit" value="Показать">
-                        </p>
-                    </div>
+                <form action="https://echo.htmlacademy.ru" method="get" class="inner-booking-form">
+                    <fieldset>
+                        <ul role="none">
+                            <li>
+                                <input id="swimming-pool-field" type="checkbox" name="swimming-pool" checked>
+                                <label for="swimming-pool-field">Бассейн</label>
+                            </li>
+                            <li>
+                                <input id="parking-field" type="checkbox" name="parking">
+                                <label for="parking-field">Парковка</label>
+                            </li>
+                            <li>
+                                <input id="wi-fi-field" type="checkbox" name="wi-fi">
+                                <label for="wi-fi-field">Wi-Fi</label>
+                            </li>
+                            <li>
+                                <input id="hotel-field" type="checkbox" name="hotel">
+                                <label for="hotel-field">Гостиница</label>
+                            </li>
+                            <li>
+                                <input id="motel-field" type="checkbox" name="motel" checked>
+                                <label for="motel-field">Мотель</label>
+                            </li>
+                            <li>
+                                <input id="apartments-field" type="checkbox" name="apartments">
+                                <label for="apartments-field">Апартаменты</label>
+                            </li>
+                            <li>
+                                <label for="pricing-field">Стоимость в сутки(р):</label>
+                                <input id="pricing-field" type="range" min="1" max="10">
+                                <span>от: <output></output></span>
+                                <span>до: <output></output></span>
+                            </li>
+                            <li>
+                                <input type="submit" value="Показать">
+                            </li>
+                        </ul>
+                    </fieldset>
                 </form>
             </section>
 
