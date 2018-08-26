@@ -26,6 +26,7 @@
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
                 <form action="https://echo.htmlacademy.ru" method="get" class="inner-booking-form">
                     <fieldset>
+                        <legend>Инфраструктура:</legend>
                         <ul role="none">
                             <li>
                                 <input id="swimming-pool-field" type="checkbox" name="swimming-pool" checked>
@@ -39,6 +40,11 @@
                                 <input id="wi-fi-field" type="checkbox" name="wi-fi">
                                 <label for="wi-fi-field">Wi-Fi</label>
                             </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <ul role="none">
                             <li>
                                 <input id="hotel-field" type="checkbox" name="hotel">
                                 <label for="hotel-field">Гостиница</label>
@@ -51,17 +57,17 @@
                                 <input id="apartments-field" type="checkbox" name="apartments">
                                 <label for="apartments-field">Апартаменты</label>
                             </li>
-                            <li>
-                                <label for="pricing-field">Стоимость в сутки(р):</label>
-                                <input id="pricing-field" type="range" min="1" max="10">
-                                <span>от: <output></output></span>
-                                <span>до: <output></output></span>
-                            </li>
-                            <li>
-                                <input type="submit" value="Показать">
-                            </li>
                         </ul>
                     </fieldset>
+                    <fieldset>
+                        <legend>Стоимость в сутки(р):</legend>
+                        <div class="pricing-form-block">
+                            <input id="pricing-field" type="range" min="0" max="5000" step="500" name="cost-per-day">
+                            <span>от: <output></output></span>
+                            <span>до: <output></output></span>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Показать">
                 </form>
             </section>
 
