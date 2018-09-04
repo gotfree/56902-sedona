@@ -1,3 +1,6 @@
+/*============================================
+Подключение шрифтов
+============================================*/
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
@@ -14,6 +17,10 @@
         url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2')
 }
 
+
+/*============================================
+Базовые стили
+============================================*/
 body {
     margin: 0;
     padding: 0;
@@ -40,6 +47,10 @@ a {
     clip: rect(0 0 0 0);
 }
 
+
+/*============================================
+Стили навигации
+============================================*/
 .main-navigation {
     font-size: 14px;
     line-height: 1.86;
@@ -49,8 +60,7 @@ a {
     background-color: #ffffff;
 }
 
-.site-navigation,
-.social-list {
+.site-navigation {
     list-style: none;
 }
 
@@ -72,6 +82,12 @@ li.current-page a:active {
     color: #766357;
 }
 
+
+/*============================================
+Стили основного контента
+============================================*/
+
+/* Не получается нормально отцентровать фон с текстом */
 .welcome::before {
     content: '';
     display: block;
@@ -83,3 +99,40 @@ li.current-page a:active {
     background-size: 100%, 50%, cover;
 }
 
+.features-list,
+.features-inner-list {
+    list-style: none;
+}
+
+.features-list-one .features-item:first-child,
+.features-list-one .features-item:last-child {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.features-item h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.features-item span::before,
+.features-item span::after {
+    content: ' - ';
+}
+
+.features-inner-item:nth-child(1) {
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+}
+
+.features-inner-item:nth-child(2) {
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+}
+
+.features-inner-item:nth-child(3) {
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+}
