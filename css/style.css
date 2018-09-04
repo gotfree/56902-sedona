@@ -3,8 +3,7 @@
     font-style: normal;
     font-weight: 400;
     src: local('PT Sans'), local('PTSans-Regular'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff2') format('woff2'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff') format('woff');
+        url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff2') format('woff2')
 }
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
@@ -12,6 +11,5 @@
     font-style: normal;
     font-weight: 700;
     src: local('PT Sans Bold'), local('PTSans-Bold'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-700.woff') format('woff');
+        url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2')
 }
