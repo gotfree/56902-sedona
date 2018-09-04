@@ -29,7 +29,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     font-weight: normal;
-    color: #000000;
+    color: #333333;
     text-transform: uppercase;
 
     background-color: #f2f2f2;
@@ -99,9 +99,21 @@ li.current-page a:active {
     background-size: 100%, 50%, cover;
 }
 
+.welcome h2 {
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* блок преимуществ */
 .features-list,
 .features-inner-list {
     list-style: none;
+}
+
+.features-inner-list {
+    background-color: #ffffff;
 }
 
 .features-list-one .features-item:first-child,
@@ -113,8 +125,13 @@ li.current-page a:active {
 
 .features-item h3 {
     font-size: 21px;
-    font-weight: bold;
     line-height: 1;
+    font-weight: bold;
+    color: #000000;
+}
+
+h3.features-special-title {
+    color: #ffffff;
 }
 
 .features-item span::before,
@@ -135,4 +152,51 @@ li.current-page a:active {
 .features-inner-item:nth-child(3) {
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
+}
+
+/* блок заказа гостиниц */
+.booking {
+    background-color: #ffffff;
+}
+
+.booking b {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #000000;
+}
+
+.booking p {
+    line-height: 1.71;
+    color: #333333;
+}
+
+.booking-form {
+    background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.booking-form .booking-button {
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #766357;
+}
+
+.booking-form p {
+    font-weight: bold;
+    line-height: 1.86;
+    color: #000000;
+}
+
+.booking-form input[value="Найти"] {
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #81b3d2;
 }
