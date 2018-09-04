@@ -13,3 +13,73 @@
     src: local('PT Sans Bold'), local('PTSans-Bold'),
         url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2')
 }
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 1.86;
+    font-weight: bold;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.site-navigation,
+.social-list {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+li.current-page a,
+li.current-page a:hover,
+li.current-page a:active {
+    color: #766357;
+}
+
+.welcome::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    height: 800px;
+    background: url(../img/intro-mask.svg) 50% bottom no-repeat,
+                url(../img/intro-welcome.svg) center 50% no-repeat,
+                url(../img/welcome-bg.jpg) top no-repeat;
+    background-size: 100%, 50%, cover;
+}
+
