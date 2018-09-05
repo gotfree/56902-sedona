@@ -4,19 +4,19 @@
 Подключение шрифтов
 ============================================*/
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: local('PT Sans'), local('PTSans-Regular'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff2') format('woff2')
+    src: local("PT Sans"), local("PTSans-Regular"),
+        url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff2") format("woff2")
 }
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: local('PT Sans Bold'), local('PTSans-Bold'),
-        url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2')
+    src: local("PT Sans Bold"), local("PTSans-Bold"),
+        url("../fonts/pt-sans-v9-latin_cyrillic-700.woff2") format("woff2")
 }
 
 
@@ -26,7 +26,7 @@
 body {
     margin: 0;
 
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
@@ -97,14 +97,14 @@ a {
 
 /* Не получается нормально отцентровать фон с текстом */
 .welcome::before {
-    content: '';
+    content: "";
     display: block;
     margin: 0 auto;
     width: 1200px;
     height: 800px;
-    background: url(../img/intro-mask.svg) 0 686px no-repeat,
-                url(../img/intro-welcome.svg) 380px 77px no-repeat,
-                url(../img/welcome-bg.jpg) 0 -58px no-repeat;
+    background: url("../img/intro-mask.svg") 0 686px no-repeat,
+                url("../img/intro-welcome.svg") 380px 77px no-repeat,
+                url("../img/welcome-bg.jpg") 0 -58px no-repeat;
     background-size: 100%, 40%, cover;
 }
 
@@ -147,22 +147,25 @@ h3.features-special-title {
 
 .features-item span::before,
 .features-item span::after {
-    content: ' - ';
+    content: " - ";
 }
 
 .features-inner-item:nth-child(1) {
-    background-image: url(../img/icon-1.svg);
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .features-inner-item:nth-child(2) {
-    background-image: url(../img/icon-3.svg);
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .features-inner-item:nth-child(3) {
-    background-image: url(../img/icon-2.svg);
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 /* блок заказа гостиниц */
@@ -187,7 +190,7 @@ h3.features-special-title {
     margin: 0 auto;
     width: 1200px;
     min-height: 593px;
-    background-image: url(../img/map.jpg);
+    background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     background-position: 50% 26px;
     background-size: 120%;
@@ -256,7 +259,7 @@ h3.features-special-title {
 }
 
 .filter{
-    background-image: url(../img/filter_bg.jpg);
+    background-image: url("../img/filter_bg.jpg");
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 100% 562px;
