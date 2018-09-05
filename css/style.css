@@ -150,23 +150,23 @@ a {
     content: " \2014";
 }
 
-.features-inner-item:nth-child(1) {
-    background-image: url("../img/icon-1.svg");
+.features-inner-item {
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.features-inner-item:nth-child(1) {
+    background-image: url("../img/icon-1.svg");
 }
 
 .features-inner-item:nth-child(2) {
-    background-image: url("../img/icon-3.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/icon-2.svg");
 }
 
 .features-inner-item:nth-child(3) {
-    background-image: url("../img/icon-2.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/icon-3.svg");
 }
+
 
 /* блок заказа гостиниц */
 .booking {
