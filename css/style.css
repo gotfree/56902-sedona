@@ -200,3 +200,33 @@ h3.features-special-title {
 
     background-color: #81b3d2;
 }
+
+
+/*============================================
+Стили подвала
+============================================*/
+.main-footer {
+
+}
+
+.footer-hash a{
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+    color: #000000;
+}
+
+.footer-social .social-list {
+    list-style: none;
+}
+
+.social-list .social-button {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.footer-copyright span {
+    line-height: 1.86;
+    color: #000000;
+}
