@@ -72,21 +72,21 @@ a {
     list-style: none;
 }
 
-.site-navigation a {
+.site-navigation a:not(.current-page) {
     color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:not(.current-page):hover {
     color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation a:not(.current-page):active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-li.current-page a,
-li.current-page a:hover,
-li.current-page a:active {
+.site-navigation .current-page,
+.site-navigation .current-page:hover,
+.site-navigation .current-page:active {
     color: #766357;
 }
 
