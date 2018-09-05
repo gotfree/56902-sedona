@@ -230,3 +230,116 @@ h3.features-special-title {
     line-height: 1.86;
     color: #000000;
 }
+
+
+/*============================================
+Стили страницы отелей
+============================================*/
+.inner-page {
+    background-color: #ffffff;
+}
+
+.inner-content{
+    background-image: url(../img/filter_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 562px;
+}
+
+.filter {
+    color: #ffffff;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 1.31;
+    font-weight: bold;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter-info {
+    color: #000000;
+}
+
+.filter-info b {
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+}
+
+.filter-sort {
+    font-size: 12px;
+}
+
+.filter-sort ul {
+    list-style: none;
+}
+
+.sort-list a {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:hover {
+    color: #81b3d2;
+}
+
+.sort-list a:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.hotels ul {
+    list-style: none;
+}
+
+.hotel-name a {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    color: #000000;
+}
+
+.hotel-name a:hover {
+    color: #81b3d2;
+}
+
+.hotel-name a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-buttons a {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.button-action {
+    background-color: #81b3d2;
+}
+
+.button-confirm {
+    background-color: #766357;
+}
+
+.button-action:hover {
+    background-color: #669ec0;
+}
+
+.button-action:active {
+    background-color: #5496bd;
+}
+
+.button-confirm:hover {
+    background-color: #604e43;
+}
+
+.button-confirm:active {
+    background-color: #503e33;
+}
