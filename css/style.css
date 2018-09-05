@@ -99,12 +99,13 @@ a {
 .welcome::before {
     content: '';
     display: block;
+    margin: 0 auto;
     width: 1200px;
     height: 800px;
-    background: url(../img/intro-mask.svg) 50% bottom no-repeat,
-                url(../img/intro-welcome.svg) center 50% no-repeat,
-                url(../img/welcome-bg.jpg) top no-repeat;
-    background-size: 100%, 50%, cover;
+    background: url(../img/intro-mask.svg) 0 686px no-repeat,
+                url(../img/intro-welcome.svg) 380px 77px no-repeat,
+                url(../img/welcome-bg.jpg) 0 -58px no-repeat;
+    background-size: 100%, 40%, cover;
 }
 
 .welcome h2 {
@@ -112,6 +113,8 @@ a {
     line-height: 1.24;
     font-weight: bold;
     color: #000000;
+
+    background-color: #ffffff;
 }
 
 /* блок преимуществ */
@@ -180,9 +183,14 @@ h3.features-special-title {
 }
 
 .booking-form {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 593px;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 50% 26px;
+    background-size: 120%;
 }
 
 .booking-form .booking-button {
@@ -247,10 +255,10 @@ h3.features-special-title {
     background-color: #ffffff;
 }
 
-.inner-content{
+.filter{
     background-image: url(../img/filter_bg.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: 0 50%;
     background-size: 100% 562px;
 }
 
