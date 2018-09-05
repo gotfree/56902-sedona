@@ -147,7 +147,7 @@ a {
 
 .features-item span::before,
 .features-item span::after {
-    content: " - ";
+    content: " \2014";
 }
 
 .features-inner-item:nth-child(1) {
