@@ -95,17 +95,15 @@ a {
 Стили основного контента
 ============================================*/
 
-/* Не получается нормально отцентровать фон с текстом */
 .welcome::before {
     content: "";
     display: block;
     margin: 0 auto;
     width: 1200px;
     height: 800px;
-    background: url("../img/intro-mask.svg") 0 686px no-repeat,
-                url("../img/intro-welcome.svg") 380px 77px no-repeat,
-                url("../img/welcome-bg.jpg") 0 -58px no-repeat;
-    background-size: 100%, 40%, cover;
+    background: url("../img/welcome-bg_all-in-one.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .welcome h2 {
@@ -190,10 +188,6 @@ a {
     margin: 0 auto;
     width: 1200px;
     min-height: 593px;
-    background-image: url("../img/map.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 26px;
-    background-size: 120%;
 }
 
 .booking-form .booking-button {
