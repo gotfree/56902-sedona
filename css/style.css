@@ -23,8 +23,13 @@
 /*============================================
 Базовые стили
 ============================================*/
+html {
+    background-color: #ffffff;
+}
+
 body {
-    margin: 0;
+    width: 1280px;
+    margin: 0 auto;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -33,6 +38,7 @@ body {
     text-transform: uppercase;
 
     background-color: #f2f2f2;
+    outline: 1px dashed blue;
 }
 
 a {
@@ -90,20 +96,75 @@ a {
     color: #766357;
 }
 
+/*============================================
+сетка
+============================================*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 1px dashed red;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.site-navigation li {
+    width: 239px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
+}
+
+.main-navigation {
+    position: relative;
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 530px;
+}
+
+.features-list,
+.features-inner-list {
+    margin: 0;
+    padding: 0;
+}
+
 
 /*============================================
 Стили основного контента
 ============================================*/
-
-.welcome::before {
-    content: "";
-    display: block;
-    margin: 0 auto;
+.welcome {
+    display: flex;
+    flex-direction: column;
     width: 1200px;
-    height: 800px;
     background: url("../img/welcome-bg_all-in-one.jpg");
-    background-position: 0 0;
+    background-position: 0 -83px;
     background-repeat: no-repeat;
+}
+
+.filling {
+    min-height: 155px;
+    margin-top: 508px;
+    padding-top: 61px;
+    padding-bottom: ;
+    background-color: #fff;
+    text-align: center;
 }
 
 .welcome h2 {
@@ -111,7 +172,6 @@ a {
     line-height: 1.24;
     font-weight: bold;
     color: #000000;
-
     background-color: #ffffff;
 }
 
