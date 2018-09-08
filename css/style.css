@@ -90,8 +90,11 @@ a {
 
 .main-header-logo {
     position: absolute;
-    top: 0;
-    left: 530px;
+    width: 244px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .site-navigation {
@@ -148,7 +151,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.filling {
+.welcome-container {
     min-height: 155px;
     margin-top: 508px;
     padding-top: 61px;
@@ -165,6 +168,7 @@ a {
 }
 
 /* блок преимуществ */
+
 .features-list,
 .features-inner-list {
     margin: 0;
@@ -172,15 +176,105 @@ a {
     list-style: none;
 }
 
+.features-list li{
+    display: flex;
+}
+
 .features-inner-list {
+    display: flex;
+}
+
+.features-list-first .features-item:first-child {
+    background-image: url("../img/city-scene.jpg");
+    background-position: 100% -78px;
+    background-repeat: no-repeat;
+}
+
+.features-list-first .features-item:last-child {
+    flex-direction: row-reverse;
+    background-image: url("../img/devils-bridge.jpg");
+    background-position: 0 -76px;
+    background-repeat: no-repeat;
+}
+
+.features-list-second {
+    display: flex;
+    text-align: center;
+}
+
+.features-inner-list {
+    display: flex;
     background-color: #ffffff;
 }
 
-.features-list-one .features-item:first-child,
-.features-list-one .features-item:last-child {
+.features-inner-list .features-inner-item-container {
+    margin: 0 auto;
+    padding-top: 145px;
+    padding-bottom: 66px;
+    text-align: center;
+}
+
+.features-inner-item:nth-child(1) .features-inner-item-container {
+    width: 252px;
+    padding-left: 73px;
+    padding-right: 75px;
+}
+
+.features-inner-item:nth-child(2) .features-inner-item-container {
+    width: 284px;
+    padding-left: 58px;
+    padding-right: 58px;
+}
+
+.features-inner-item:nth-child(3) .features-inner-item-container {
+    width: 273px;
+    padding-left: 64px;
+    padding-right: 63px;
+}
+
+.features-inner-item {
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.features-inner-item:nth-child(1) {
+    background-image: url("../img/icon-1.svg");
+    background-position-y: 60px;
+}
+
+.features-inner-item:nth-child(2) {
+    background-image: url("../img/icon-2.svg");
+    background-position-y: 61px;
+}
+
+.features-inner-item:nth-child(3) {
+    background-image: url("../img/icon-3.svg");
+    background-position-y: 56px;
+}
+
+.features-list-first .features-item:first-child,
+.features-list-first .features-item:last-child {
     color: #ffffff;
 
     background-color: #81b3d2;
+}
+
+.features-item .features-item-container {
+    width: 280px;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: center;
+}
+
+
+.features-item .features-item-container:last-child {
+    width: 303px;
+    padding-top: 43px;
+    padding-bottom: 59px;
+    padding-left: 48px;
+    padding-right: 49px;
 }
 
 .features-item h3 {
@@ -199,21 +293,28 @@ a {
     content: " \2014";
 }
 
-.features-inner-item {
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.features-item:nth-child(1) .features-item-second-container {
+    width: 208px;
+    padding-top: 34px;
+    padding-bottom: 47px;
+    padding-left: 95px;
+    padding-right: 97px;
 }
 
-.features-inner-item:nth-child(1) {
-    background-image: url("../img/icon-1.svg");
+.features-item:nth-child(2) .features-item-second-container {
+    width: 262px;
+    padding-top: 34px;
+    padding-bottom: 47px;
+    padding-left: 69px;
+    padding-right: 69px;
 }
 
-.features-inner-item:nth-child(2) {
-    background-image: url("../img/icon-2.svg");
-}
-
-.features-inner-item:nth-child(3) {
-    background-image: url("../img/icon-3.svg");
+.features-item:nth-child(3) .features-item-second-container {
+    width: 247px;
+    padding-top: 34px;
+    padding-bottom: 47px;
+    padding-left: 76px;
+    padding-right: 77px;
 }
 
 /* блок заказа гостиниц */
