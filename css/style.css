@@ -328,7 +328,16 @@ a {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
     background-color: #ffffff;
+    outline: 2px dashed green;
+}
+
+.booking-first-container {
+    padding-top: 50px;
+    padding-bottom: 52px;
 }
 
 .booking b {
@@ -344,13 +353,15 @@ a {
 }
 
 .booking-form {
-    display: block;
-    margin: 0 auto;
-    width: 1200px;
-    min-height: 593px;
+
 }
 
 .booking-form .booking-button {
+    display: inline-block;
+    width: 568px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
     font-size: 21px;
     line-height: 1.24;
     font-weight: bold;
