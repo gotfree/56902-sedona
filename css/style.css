@@ -63,9 +63,23 @@ a {
 
 
 /*============================================
-Стили навигации
+Сетка
+============================================*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 1px dashed red;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+
+/*============================================
+Стили навигации - хедера
 ============================================*/
 .main-navigation {
+    position: relative;
     font-size: 14px;
     line-height: 1.86;
     font-weight: bold;
@@ -74,8 +88,32 @@ a {
     background-color: #ffffff;
 }
 
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 530px;
+}
+
 .site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     list-style: none;
+}
+
+.site-navigation li {
+    width: 239px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
 }
 
 .site-navigation a:not(.current-page) {
@@ -96,59 +134,11 @@ a {
     color: #766357;
 }
 
-/*============================================
-сетка
-============================================*/
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
-    outline: 1px dashed red;
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-}
-
-.site-navigation {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.site-navigation li {
-    width: 239px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.site-navigation li:nth-child(2) {
-    margin-right: auto;
-}
-
-.site-navigation li:nth-child(3) {
-    margin-left: auto;
-}
-
-.main-navigation {
-    position: relative;
-}
-
-.main-header-logo {
-    position: absolute;
-    top: 0;
-    left: 530px;
-}
-
-.features-list,
-.features-inner-list {
-    margin: 0;
-    padding: 0;
-}
-
 
 /*============================================
 Стили основного контента
 ============================================*/
+/* приветствие с фоном */
 .welcome {
     display: flex;
     flex-direction: column;
@@ -162,7 +152,6 @@ a {
     min-height: 155px;
     margin-top: 508px;
     padding-top: 61px;
-    padding-bottom: ;
     background-color: #fff;
     text-align: center;
 }
@@ -178,6 +167,8 @@ a {
 /* блок преимуществ */
 .features-list,
 .features-inner-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -224,7 +215,6 @@ a {
 .features-inner-item:nth-child(3) {
     background-image: url("../img/icon-3.svg");
 }
-
 
 /* блок заказа гостиниц */
 .booking {
