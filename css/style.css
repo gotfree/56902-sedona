@@ -168,7 +168,6 @@ a {
 }
 
 /* блок преимуществ */
-
 .features-list,
 .features-inner-list {
     margin: 0;
@@ -319,6 +318,16 @@ a {
 
 /* блок заказа гостиниц */
 .booking {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
     background-color: #ffffff;
 }
 
@@ -370,7 +379,15 @@ a {
 Стили подвала
 ============================================*/
 .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
     background-color: #ffffff;
+}
+
+.footer-hash {
+    padding-left: 132px;
 }
 
 .footer-hash a{
@@ -381,20 +398,65 @@ a {
 }
 
 .footer-social .social-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.social-list .social-button {
-    color: #ffffff;
+.social-list li {
+    margin-right: 6px;
+}
 
+.social-list li:last-child {
+    margin-right: 0;
+}
+
+.social-list .social-button {
+    display: block;
+    width: 46px;
+    height: 48px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-color: #81b3d2;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.social-list .social-button:last-child {
+    margin-right: 0;
+}
+
+.social-list .social-button-tw {
+    background-image: url("../img/twitter.svg");
+}
+
+.social-list .social-button-fb {
+    background-image: url("../img/fb-icon.svg");
+}
+
+.social-list .social-button-you {
+    background-image: url("../img/youtube.svg");
+}
+
+.footer-copyright {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding-right: 101px;
 }
 
 .footer-copyright span {
+    padding-right: 8px;
     line-height: 1.86;
     color: #000000;
 }
-
 
 /*============================================
 Стили страницы отелей
