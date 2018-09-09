@@ -27,7 +27,8 @@ html {
     background-color: #ffffff;
 }
 
-body {
+body,
+.inner-page {
     width: 1280px;
     margin: 0 auto;
 
@@ -38,11 +39,14 @@ body {
     text-transform: uppercase;
 
     background-color: #f2f2f2;
-    outline: 1px dashed blue;
 }
 
 a {
     text-decoration: none;
+}
+
+.inner-page > .flex-container {
+    background-color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -61,19 +65,25 @@ a {
     overflow: hidden;
 }
 
+.none {
+    display: none;
+}
+
 
 /*============================================
 Сетка
 ============================================*/
+.main-page .flex-container,
+.inner-page > .flex-container{
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
     width: 1200px;
     margin: 0 auto;
-    outline: 1px dashed red;
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
-
 
 /*============================================
 Стили навигации - хедера
@@ -318,21 +328,11 @@ a {
 
 /* блок заказа гостиниц */
 .booking {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
     flex-direction: column;
-    -ms-align-items: center;
     align-items: center;
     text-align: center;
     background-color: #ffffff;
-    outline: 2px dashed green;
 }
 
 .booking-first-container {
@@ -472,15 +472,25 @@ a {
 /*============================================
 Стили страницы отелей
 ============================================*/
-.inner-page {
-    background-color: #ffffff;
-}
-
-.filter{
+.inner-booking-form .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    padding-left: 72px;
+    padding-right: 74px;
     background-image: url("../img/filter_bg.jpg");
     background-repeat: no-repeat;
-    background-position: 0 50%;
-    background-size: 100% 562px;
+    background-position: 0 -100px;
+    box-sizing: border-box;
+}
+
+.inner-booking-form .flex-item-2 {
+    margin-left: 115px;
+}
+
+.inner-booking-form .flex-item-3 {
+    margin-left: auto;
 }
 
 .filter {
@@ -501,17 +511,37 @@ a {
     color: #000000;
 }
 
-.filter-info b {
+.filter-info .flex-container {
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 72px;
+    padding-right: 74px;
+    box-sizing: border-box;
+}
+
+.filter-info .filter-search-results {
+    width: 100%;
+}
+
+.filter-info b,
+.filter-info .filter-number-of-items {
     font-size: 21px;
     line-height: 1.24;
     font-weight: bold;
 }
 
 .filter-sort {
+    display: flex;
+    width: 100%;
     font-size: 12px;
 }
 
-.filter-sort ul {
+.sort-list {
+    display: flex;
+    padding: 0;
     list-style: none;
 }
 
@@ -531,8 +561,51 @@ a {
     border-bottom: none;
 }
 
-.hotels ul {
+.sort-list .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.sort-list .triangle-top {
+    border: 7px solid transparent;
+    border-top: 11px solid #cacaca;
+}
+
+.sort-list .triangle-bot {
+    border: 7px solid transparent;
+    border-top: 11px solid #cacaca;
+    transform: rotate(180deg);
+}
+
+.sort-list .triangle-bot:active,
+.sort-list .triangle-top:active {
+    border: 7px solid transparent;
+    border-top: 11px solid #81b3d2;
+}
+
+.hotels .hotel-list {
     list-style: none;
+    padding-left: 0;
+}
+
+.hotel-list .flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    padding-left: 72px;
+    padding-right: 74px;
+    box-sizing: border-box;
+}
+
+.hotel-list .hotel-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel-list .hotel-info {
+    margin-left: 30px;
 }
 
 .hotel-name a {
@@ -579,4 +652,8 @@ a {
 
 .button-confirm:active {
     background-color: #503e33;
+}
+
+.hotel-list .hotel-rating {
+    margin-left: auto;
 }
