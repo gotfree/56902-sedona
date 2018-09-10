@@ -65,16 +65,9 @@ a {
 /*============================================
 Сетка
 ============================================*/
-.main-page .flex-container,
-.inner-page > .flex-container{
+.main-page,
+.inner-page {
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 /*============================================
