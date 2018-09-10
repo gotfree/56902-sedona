@@ -85,7 +85,8 @@ a {
 
 .main-header-logo {
     position: absolute;
-    width: 244px;
+    width: 140px;
+    height: 72px;
     left: 0;
     right: 0;
     margin: auto;
