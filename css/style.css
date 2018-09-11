@@ -107,6 +107,12 @@ a {
     padding-bottom: 15px;
 }
 
+
+/*
+    Правки 6-ого пуллреквеста пункт 5
+    пока оставил меню на флексах, позже вернусь
+    к варианту на inline-block
+ */
 .site-navigation li:nth-child(2) {
     margin-right: auto;
 }
