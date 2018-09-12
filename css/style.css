@@ -431,12 +431,7 @@ a {
 }
 
 .footer-copyright {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -ms-align-items: center;
     align-items: center;
     padding-right: 101px;
 }
