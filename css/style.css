@@ -271,10 +271,7 @@ a {
 
 .features-item .features-item-container:last-child {
     width: 303px;
-    padding-top: 43px;
-    padding-bottom: 59px;
-    padding-left: 48px;
-    padding-right: 49px;
+    padding: 43px 49px 59px 48px;
 }
 
 .features-item h3 {
