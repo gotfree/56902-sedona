@@ -264,10 +264,7 @@ a {
 
 .features-item .features-item-container {
     width: 280px;
-    padding-top: 40px;
-    padding-bottom: 58px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 40px 60px 58px 60px;
     text-align: center;
 }
 
