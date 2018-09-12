@@ -61,11 +61,6 @@ a {
     overflow: hidden;
 }
 
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 
 /*============================================
 Сетка
@@ -152,7 +147,6 @@ a {
 .welcome {
     display: flex;
     flex-direction: column;
-    width: 1200px;
     background: url("../img/welcome-bg_all-in-one.jpg");
     background-position: 0 -83px;
     background-repeat: no-repeat;
@@ -449,7 +443,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1200px;
     padding-left: 72px;
     padding-right: 74px;
     background-image: url("../img/filter_bg.jpg");
@@ -486,7 +479,6 @@ a {
 
 .filter-info .flex-container {
     display: flex;
-    width: 1200px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -565,7 +557,6 @@ a {
 .hotel-list .flex-container {
     display: flex;
     flex-direction: row;
-    width: 1200px;
     padding-left: 72px;
     padding-right: 74px;
     box-sizing: border-box;
