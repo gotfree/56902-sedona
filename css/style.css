@@ -166,7 +166,7 @@ a {
     text-align: center;
 }
 
-.welcome h2 {
+.welcome .welcome-header {
     font-size: 21px;
     line-height: 1.24;
     font-weight: bold;
