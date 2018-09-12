@@ -292,26 +292,17 @@ a {
 
 .features-item:nth-child(1) .features-item-second-container {
     width: 208px;
-    padding-top: 34px;
-    padding-bottom: 47px;
-    padding-left: 95px;
-    padding-right: 97px;
+    padding: 34px 97px 47px 95px;
 }
 
 .features-item:nth-child(2) .features-item-second-container {
     width: 262px;
-    padding-top: 34px;
-    padding-bottom: 47px;
-    padding-left: 69px;
-    padding-right: 69px;
+    padding: 34px 69px 47px 69px;
 }
 
 .features-item:nth-child(3) .features-item-second-container {
     width: 247px;
-    padding-top: 34px;
-    padding-bottom: 47px;
-    padding-left: 76px;
-    padding-right: 77px;
+    padding: 34px 77px 47px 76px;
 }
 
 /* блок заказа гостиниц */
