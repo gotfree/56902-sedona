@@ -30,59 +30,53 @@
                     <form action="https://echo.htmlacademy.ru" method="get" class="inner-booking-form">
                         <div class="container-padded">
                             <div class="flex-container">
-                                <div class="flex-item-1">
-                                    <fieldset>
-                                        <legend>Инфраструктура:</legend>
-                                        <ul role="none">
-                                            <li>
-                                                <input id="swimming-pool-field" type="checkbox" name="swimming-pool" checked>
-                                                <label for="swimming-pool-field">Бассейн</label>
-                                            </li>
-                                            <li>
-                                                <input id="parking-field" type="checkbox" name="parking">
-                                                <label for="parking-field">Парковка</label>
-                                            </li>
-                                            <li>
-                                                <input id="wi-fi-field" type="checkbox" name="wi-fi">
-                                                <label for="wi-fi-field">Wi-Fi</label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                                <div class="flex-item-2">
-                                    <fieldset>
-                                        <legend>Тип жилья:</legend>
-                                        <ul role="none">
-                                            <li>
-                                                <input id="hotel-field" type="checkbox" name="hotel">
-                                                <label for="hotel-field">Гостиница</label>
-                                            </li>
-                                            <li>
-                                                <input id="motel-field" type="checkbox" name="motel" checked>
-                                                <label for="motel-field">Мотель</label>
-                                            </li>
-                                            <li>
-                                                <input id="apartments-field" type="checkbox" name="apartments">
-                                                <label for="apartments-field">Апартаменты</label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                                <div class="flex-item-3">
-                                    <fieldset>
-                                        <!--
-                                        Рассмотреть вариант "инпутов" для полей с цифрами,
-                                        а "рычажок" просто как декоративный элемент
-                                        -->
-                                        <legend>Стоимость в сутки(р):</legend>
-                                        <div class="pricing-form-block">
-                                            <input id="pricing-field" type="range" min="0" max="5000" step="500" name="cost-per-day">
-                                            <span>от: <output></output></span>
-                                            <span>до: <output></output></span>
-                                        </div>
-                                    </fieldset>
-                                    <input type="submit" value="Показать">
-                                </div>
+                                <fieldset class="booking-fieldset booking-fieldset-1">
+                                    <legend>Инфраструктура:</legend>
+                                    <ul role="none">
+                                        <li>
+                                            <input id="swimming-pool-field" type="checkbox" name="swimming-pool" checked>
+                                            <label for="swimming-pool-field">Бассейн</label>
+                                        </li>
+                                        <li>
+                                            <input id="parking-field" type="checkbox" name="parking">
+                                            <label for="parking-field">Парковка</label>
+                                        </li>
+                                        <li>
+                                            <input id="wi-fi-field" type="checkbox" name="wi-fi">
+                                            <label for="wi-fi-field">Wi-Fi</label>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <fieldset class="booking-fieldset booking-fieldset-2">
+                                    <legend>Тип жилья:</legend>
+                                    <ul role="none">
+                                        <li>
+                                            <input id="hotel-field" type="checkbox" name="hotel">
+                                            <label for="hotel-field">Гостиница</label>
+                                        </li>
+                                        <li>
+                                            <input id="motel-field" type="checkbox" name="motel" checked>
+                                            <label for="motel-field">Мотель</label>
+                                        </li>
+                                        <li>
+                                            <input id="apartments-field" type="checkbox" name="apartments">
+                                            <label for="apartments-field">Апартаменты</label>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <fieldset class="booking-fieldset booking-fieldset-3">
+                                    <!--
+                                    Рассмотреть вариант "инпутов" для полей с цифрами,
+                                    а "рычажок" просто как декоративный элемент
+                                    -->
+                                    <legend>Стоимость в сутки(р):</legend>
+                                    <div class="pricing-form-block">
+                                        <input id="pricing-field" type="range" min="0" max="5000" step="500" name="cost-per-day">
+                                        <span>от: <output></output></span>
+                                        <span>до: <output></output></span>
+                                    </div>
+                                </fieldset>
+                                <input class="booking-button" type="submit" value="Показать">
                             </div>
                         </div>
                     </form>

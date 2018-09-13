@@ -1,5 +1,7 @@
 /*
 (https://codepen.io/code_monkey/pen/VrOQLZ)
+
+Сделать сетку филдсетов страницы отелей
 */
 
 @charset "UTF-8";
@@ -470,12 +472,18 @@ a {
     box-sizing: border-box;
 }
 
-.inner-booking-form .flex-item-2 {
+.inner-booking-form .booking-fieldset {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+.inner-booking-form .booking-fieldset-2 {
     margin-left: 115px;
 }
 
-.inner-booking-form .flex-item-3 {
-    margin-left: auto;
+.inner-booking-form .booking-fieldset-3 {
+    margin-left: 350px;
 }
 
 .filter {
