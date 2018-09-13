@@ -551,14 +551,17 @@ a {
 
 .sort-list .triangle-bot {
     border: 7px solid transparent;
-    border-top: 11px solid #cacaca;
-    transform: rotate(180deg);
+    border-bottom: 11px solid #cacaca;
+/*     transform: rotate(180deg); */
 }
 
-.sort-list .triangle-bot:active,
 .sort-list .triangle-top:active {
     border: 7px solid transparent;
     border-top: 11px solid #81b3d2;
+}
+
+.sort-list .triangle-bot:active {
+    border-bottom: 11px solid #81b3d2;
 }
 
 .hotels .hotel-list {
