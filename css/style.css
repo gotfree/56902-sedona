@@ -61,21 +61,14 @@ a {
     padding-right: 72px;
 }
 
-.inner-page > .flex-container {
-    background-color: #ffffff;
-}
-
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -194,99 +187,106 @@ a {
 
 /* блок преимуществ */
 .features-list,
-.features-inner-list {
+.features-inner-list,
+.features-list-second {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.features-list li,
-.features-list-second,
-.features-inner-list {
-    display: flex;
-    text-align: center;
-}
-
 .features-list .features-item-1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 256px;
+    padding-left: 60px;
+    padding-right: 860px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
     background-image: url("../img/city-scene.jpg");
     background-position: 100% -78px;
     background-repeat: no-repeat;
-    color: #ffffff;
-    background-color: #81b3d2;
 }
 
 .features-list .features-item-3 {
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: column;
+    min-height: 256px;
+    padding-right: 49px;
+    padding-left: 848px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
     background-image: url("../img/devils-bridge.jpg");
     background-position: 0 -76px;
     background-repeat: no-repeat;
-    color: #ffffff;
-    background-color: #81b3d2;
 }
-
+/* ---------------- */
 .features-inner-list {
     display: flex;
-    background-color: #ffffff;
 }
 
-.features-inner-list .features-inner-item-container {
+.features-inner-list .features-inner-item {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding-top: 145px;
     padding-bottom: 66px;
     text-align: center;
-}
 
-.features-inner-item:nth-child(1) .features-inner-item-container {
-    width: 252px;
-    padding-left: 73px;
-    padding-right: 75px;
-}
-
-.features-inner-item:nth-child(2) .features-inner-item-container {
-    width: 284px;
-    padding-left: 58px;
-    padding-right: 58px;
-}
-
-.features-inner-item:nth-child(3) .features-inner-item-container {
-    width: 273px;
-    padding-left: 64px;
-    padding-right: 63px;
-}
-
-.features-inner-item {
     background-repeat: no-repeat;
     background-position-x: 50%;
 }
 
-.features-inner-item:nth-child(1) {
+.features-inner-list .features-inner-item-1 {
+    width: 252px;
+    padding-left: 73px;
+    padding-right: 75px;
+
     background-image: url("../img/icon-1.svg");
     background-position-y: 60px;
 }
 
-.features-inner-item:nth-child(2) {
+.features-inner-list .features-inner-item-2 {
+    width: 284px;
+    padding-left: 58px;
+    padding-right: 58px;
+
     background-image: url("../img/icon-2.svg");
     background-position-y: 61px;
 }
 
-.features-inner-item:nth-child(3) {
+.features-inner-list .features-inner-item-3 {
+    width: 273px;
+    padding-left: 64px;
+    padding-right: 63px;
+
     background-image: url("../img/icon-3.svg");
     background-position-y: 56px;
 }
-
-.features-item .features-item-container {
-    width: 280px;
-    padding: 40px 60px 58px 60px;
+/* -------------------- */
+.features-list-second {
+    display: flex;
     text-align: center;
 }
 
-
-.features-item .features-item-container:last-child {
-    width: 303px;
-    padding: 43px 49px 59px 48px;
+.features-item-4 {
+    width: 208px;
+    padding: 34px 97px 47px 95px;
 }
 
-.features-item h3 {
+.features-item-5 {
+    width: 262px;
+    padding: 34px 69px 47px 69px;
+}
+
+.features-item-6 {
+    width: 247px;
+    padding: 34px 77px 47px 76px;
+}
+
+/* ---------------- */
+.features-item .features-title {
     font-size: 21px;
     line-height: 1;
     font-weight: bold;
@@ -297,24 +297,9 @@ a {
     color: #ffffff;
 }
 
-.features-item span::before,
-.features-item span::after {
+.features-item .features-number::before,
+.features-item .features-number::after {
     content: " \2014";
-}
-
-.features-item:nth-child(1) .features-item-second-container {
-    width: 208px;
-    padding: 34px 97px 47px 95px;
-}
-
-.features-item:nth-child(2) .features-item-second-container {
-    width: 262px;
-    padding: 34px 69px 47px 69px;
-}
-
-.features-item:nth-child(3) .features-item-second-container {
-    width: 247px;
-    padding: 34px 77px 47px 76px;
 }
 
 /* блок заказа гостиниц */
@@ -558,7 +543,6 @@ a {
 .sort-list .triangle-bot {
     border: 7px solid transparent;
     border-bottom: 11px solid #cacaca;
-/*     transform: rotate(180deg); */
 }
 
 .sort-list .triangle-top:active {
