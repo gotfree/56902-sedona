@@ -504,10 +504,6 @@ a {
     box-sizing: border-box;
 }
 
-.filter-info .filter-search-results {
-    width: 100%;
-}
-
 .filter-info b,
 .filter-info .filter-number-of-items {
     font-size: 21px;
@@ -517,7 +513,6 @@ a {
 
 .filter-sort {
     display: flex;
-    width: 100%;
     font-size: 12px;
 }
 
