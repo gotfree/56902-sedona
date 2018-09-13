@@ -6,6 +6,7 @@
 2 Инпуты в фильтре отелей (https://codepen.io/firefoxic/pen/ZMQBBE)
 
 3 Убрать лишние div внутри li
+4 Упорчдочить стили features
 */
 
 @charset "UTF-8";
@@ -20,7 +21,7 @@
     src: local("PT Sans"), local("PTSans-Regular"),
         url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff2") format("woff2")
 }
-/* pt-sans-700 - latin_cyrillic */
+
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -28,7 +29,6 @@
     src: local("PT Sans Bold"), local("PTSans-Bold"),
         url("../fonts/pt-sans-v9-latin_cyrillic-700.woff2") format("woff2")
 }
-
 
 /*============================================
 Базовые стили
@@ -201,26 +201,27 @@ a {
 }
 
 .features-list li,
+.features-list-second,
 .features-inner-list {
     display: flex;
+    text-align: center;
 }
 
-.features-list-first .features-item:first-child {
+.features-list .features-item-1 {
     background-image: url("../img/city-scene.jpg");
     background-position: 100% -78px;
     background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
-.features-list-first .features-item:last-child {
+.features-list .features-item-3 {
     flex-direction: row-reverse;
     background-image: url("../img/devils-bridge.jpg");
     background-position: 0 -76px;
     background-repeat: no-repeat;
-}
-
-.features-list-second {
-    display: flex;
-    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .features-inner-list {
@@ -271,13 +272,6 @@ a {
 .features-inner-item:nth-child(3) {
     background-image: url("../img/icon-3.svg");
     background-position-y: 56px;
-}
-
-.features-list-first .features-item:first-child,
-.features-list-first .features-item:last-child {
-    color: #ffffff;
-
-    background-color: #81b3d2;
 }
 
 .features-item .features-item-container {
