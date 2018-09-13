@@ -1,10 +1,5 @@
 /*
-1 - поправить все дублирующиеся свойства
-2 - Убрать ширину у body
-3 - ипользовать вместо этого ширину центровщика
 (https://codepen.io/code_monkey/pen/VrOQLZ)
-4 - для страницы отелей использовать центровщик
-с отступами
 */
 
 @charset "UTF-8";
@@ -37,17 +32,27 @@ html {
 }
 
 body {
-    width: 1200px;
-    margin: 0 auto;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
     text-transform: uppercase;
+
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.container-padded {
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .inner-page > .flex-container {
@@ -74,17 +79,12 @@ a {
 /*============================================
 Сетка
 ============================================*/
-.main-page,
-.inner-page {
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-}
 
 /*============================================
 Стили навигации - хедера
 ============================================*/
 .main-navigation {
     position: relative;
-    font-size: 14px;
     line-height: 1.86;
     font-weight: bold;
     color: #000000;
@@ -110,24 +110,33 @@ a {
     list-style: none;
 }
 
-.site-navigation li {
-    width: 239px;
+.site-navigation .site-navigation-items {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-
-/*
-    Правки 6-ого пуллреквеста пункт 5
-    пока оставил меню на флексах, позже вернусь
-    к варианту на inline-block
- */
-.site-navigation li:nth-child(2) {
-    margin-right: auto;
+.site-navigation .site-navigation-item-1 {
+    text-align: left;
+    padding-right: 74px;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation .site-navigation-item-2 {
+    margin-right: auto;
+    text-align: left;
+    padding-left: 73px;
+    padding-right: 68px;
+}
+
+.site-navigation .site-navigation-item-3 {
     margin-left: auto;
+    text-align: right;
+    padding-left: 76px;
+    padding-right: 73px;
+}
+
+.site-navigation .site-navigation-item-4 {
+    text-align: right;
+    padding-left: 88px;
 }
 
 .site-navigation a:not(.current-page) {
@@ -448,15 +457,16 @@ a {
 /*============================================
 Стили страницы отелей
 ============================================*/
+.inner-booking-form .container-padded {
+    background-image: url("../img/filter_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+}
+
 .inner-booking-form .flex-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 72px;
-    padding-right: 74px;
-    background-image: url("../img/filter_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 -100px;
     box-sizing: border-box;
 }
 
@@ -491,8 +501,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 72px;
-    padding-right: 74px;
     box-sizing: border-box;
 }
 
@@ -563,11 +571,9 @@ a {
     padding-left: 0;
 }
 
-.hotel-list .flex-container {
+.hotel-list .hotel-list-item {
     display: flex;
     flex-direction: row;
-    padding-left: 72px;
-    padding-right: 74px;
     box-sizing: border-box;
 }
 
