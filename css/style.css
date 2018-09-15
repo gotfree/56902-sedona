@@ -360,12 +360,22 @@ a {
 
 .booking-form p {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: bold;
     line-height: 1.86;
     color: #000000;
+    box-sizing: border-box;
+}
+
+.booking-container {
+/*     display: flex;
+flex-direction: column;
+align-items: flex-start; */
+    width: 460px;
+    outline: 1px dashed green;
 }
 
 .booking-form p:first-child {
@@ -382,6 +392,7 @@ a {
 }
 
 .booking-form input[type=text] {
+    position: relative;
     width: 346px;
 }
 
@@ -394,8 +405,26 @@ a {
     background-color: #81b3d2;
 }
 
+.booking-form button {
+    position: absolute;
+    width: 33px;
+    height: 30px;
+    right: 70px;
+    border: 0;
+    fill: #cacaca;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.booking-form button:hover {
+    fill: #000000;
+}
+
+.booking-form button:active {
+    fill: #81b3d2;
+}
+
 .booking-form label {
-    padding-right: 22px;
 }
 
 /*============================================
