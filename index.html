@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <script>
+            document.documentElement.classList.replace('no-js', 'js');
+        </script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -29,7 +32,7 @@
                 </h1>
                 <section class="welcome">
                     <div class="welcome-container">
-                        <h2 class="welcome-header">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+                        <h2 class="welcome-header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
                         <p class="welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                     </div>
                 </section>
@@ -37,7 +40,7 @@
                     <h2 class="visually-hidden">Преимущества Седоны</h2>
                     <ul class="features-list features-list-first">
                         <li class="features-item features-item-1">
-                            <h3 class="features-title features-special-title">настоящий городок</h3>
+                            <h3 class="features-title features-special-title">настоящий<br>городок</h3>
                             <span class="features-number">№1</span>
                             <p class="features-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
                         </li>
@@ -58,7 +61,7 @@
                             </ul>
                         </li>
                         <li class="features-item features-item-3">
-                            <h3 class="features-title features-special-title">там есть мост дьявола</h3>
+                            <h3 class="features-title features-special-title">там есть<br>мост дьявола</h3>
                             <span class="features-number">№2</span>
                             <p class="features-text">да, по нему можно пройти! если конечно вы осмелитесь</p>
                         </li>
@@ -87,10 +90,10 @@
                         <b>Заинтересовались?</b>
                         <p>укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                     </div>
+                    <a href="#" class="button booking-button">поиск гостиницы в Седоне</a>
+                    <img src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
                     <form action="https://echo.htmlacademy.ru" method="get" class="booking-form">
-                        <a href="#" class="button booking-button">поиск гостиницы в Седоне</a>
-                        <img src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
-                        <div hidden>
+                        <div>
                             <!--
                             реализовать поля попапом,
                             всплывающим по нажатию на .booking-button

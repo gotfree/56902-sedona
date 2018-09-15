@@ -19,6 +19,7 @@
     font-style: normal;
     font-weight: 400;
     src: local("PT Sans"), local("PTSans-Regular"),
+        url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff") format("woff")
         url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff2") format("woff2")
 }
 
@@ -27,6 +28,7 @@
     font-style: normal;
     font-weight: 700;
     src: local("PT Sans Bold"), local("PTSans-Bold"),
+        url("../fonts/pt-sans-v9-latin_cyrillic-700.woff") format("woff")
         url("../fonts/pt-sans-v9-latin_cyrillic-700.woff2") format("woff2")
 }
 
@@ -43,7 +45,9 @@ body {
     line-height: 1.5;
     color: #333333;
     text-transform: uppercase;
-
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
 }
 
 a {
@@ -95,10 +99,11 @@ a {
     position: absolute;
     width: 140px;
     height: 72px;
+    top: -1px;
     left: 0;
     right: 0;
-    margin: auto;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-navigation {
@@ -328,11 +333,11 @@ a {
     color: #333333;
 }
 
-.booking-form {
-
+/* .js .booking-form {
+    display: none;
 }
-
-.booking-form .booking-button {
+ */
+.booking-button {
     display: inline-block;
     width: 568px;
     margin: 0 auto;
@@ -344,6 +349,10 @@ a {
     color: #ffffff;
 
     background-color: #766357;
+}
+
+.booking-form {
+    background-color: #a4a4a4;
 }
 
 .booking-form p {
