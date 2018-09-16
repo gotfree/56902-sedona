@@ -349,18 +349,17 @@ a {
 
 .booking-form {
     position: absolute;
-    width: 458px;
+    width: 568px;
     top: 285px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 55px;
 
     background-color: #ffffff;
     outline: 1px solid red;
+    box-sizing: border-box;
 }
 
-.booking-form p {
+.booking-form .booking-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-top: 0;
     margin-bottom: 30px;
@@ -368,21 +367,38 @@ a {
     line-height: 1.86;
     color: #000000;
     box-sizing: border-box;
-}
-
-.booking-container {
-/*     display: flex;
-flex-direction: column;
-align-items: flex-start; */
-    width: 460px;
     outline: 1px dashed green;
 }
-
-.booking-form p:first-child {
-    padding-top: 55px;
+.booking-form .booking-number-container {
+    margin-bottom: 55px;
 }
 
-.booking-form input[type=text],
+.booking-form label {
+    display: block;
+    width: 112px;
+    padding: 6px 15px 6px 0;
+}
+
+.booking-container-column {
+    display: flex;
+}
+
+.booking-form input[type=submit] {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 16px 48px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.24;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0;
+    background-color: #81b3d2;
+
+}
+
+/* .booking-form input[type=text],
 .booking-form input[type=number] {
     min-height: 38px;
     border: 0;
@@ -422,10 +438,9 @@ align-items: flex-start; */
 
 .booking-form button:active {
     fill: #81b3d2;
-}
+} */
 
-.booking-form label {
-}
+
 
 /*============================================
 Стили подвала
