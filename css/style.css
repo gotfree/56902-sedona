@@ -378,6 +378,22 @@ a {
     background-color: #766357;
 }
 
+.booking-button:hover {
+    background-color: #604e43;
+}
+
+.booking-button:active {
+    background-color: #503e33;
+}
+
+.booking input[type="submit"]:hover {
+    background-color: #669ec0;
+}
+
+.booking input[type="submit"]:active {
+    background-color: #5496bd;
+}
+
 .booking-img {
     position: absolute;
     top: 85px;
@@ -664,6 +680,14 @@ input::-webkit-inner-spin-button {
     padding-right: 8px;
     line-height: 1.86;
     color: #000000;
+}
+
+.social-button:hover {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
 }
 
 .footer-copyright .html-academy-link {
