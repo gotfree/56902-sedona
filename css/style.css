@@ -15,21 +15,21 @@
 Подключение шрифтов
 ============================================*/
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Sans"), local("PTSans-Regular"),
-        url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff") format("woff")
-        url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff2") format("woff2")
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff') format('woff');
 }
-
+/* pt-sans-700 - latin_cyrillic */
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("PT Sans Bold"), local("PTSans-Bold"),
-        url("../fonts/pt-sans-v9-latin_cyrillic-700.woff") format("woff")
-        url("../fonts/pt-sans-v9-latin_cyrillic-700.woff2") format("woff2")
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/pt-sans-v9-latin_cyrillic-700.woff') format('woff');
 }
 
 /*============================================
@@ -130,7 +130,7 @@ a {
     margin-left: auto;
     text-align: right;
     padding-left: 76px;
-    padding-right: 73px;
+    padding-right: 75px;
 }
 
 .site-navigation .site-navigation-item-4 {
@@ -161,23 +161,35 @@ a {
 Стили основного контента
 ============================================*/
 /* приветствие с фоном */
-.welcome {
+
+.main-content {
     display: flex;
     flex-direction: column;
+}
+.main-image {
+    min-height: 508px;
     background: url("../img/welcome-bg_all-in-one.jpg");
     background-position: 0 -83px;
     background-repeat: no-repeat;
 }
 
+.welcome {
+    display: flex;
+    background-color: #ffffff;
+}
+
 .welcome-container {
+    max-width: 500px;
     min-height: 155px;
-    margin-top: 508px;
-    padding-top: 61px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    padding-top: 43px;
     background-color: #fff;
     text-align: center;
 }
 
 .welcome .welcome-header {
+    margin-bottom: 30px;
     font-size: 21px;
     line-height: 1.24;
     font-weight: bold;
@@ -224,6 +236,8 @@ a {
 /* ---------------- */
 .features-inner-list {
     display: flex;
+    margin-bottom: 2px;
+    background-color: #ffffff;
 }
 
 .features-inner-list .features-inner-item {
@@ -236,6 +250,12 @@ a {
 
     background-repeat: no-repeat;
     background-position-x: 50%;
+}
+
+.features-inner-list .features-title {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .features-inner-list .features-inner-item-1 {
@@ -285,6 +305,16 @@ a {
     padding: 34px 77px 47px 76px;
 }
 
+.features-list-second .features-title {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 26px;
+}
+
+.features-list-second .features-text {
+    padding-top: 7px;
+}
+
 /* ---------------- */
 .features-item .features-title {
     font-size: 21px;
@@ -294,12 +324,13 @@ a {
 }
 
 .features .features-special-title {
+    padding-top: 25px;
+    padding-bottom: 5px;
     color: #ffffff;
 }
 
-.features-item .features-number::before,
-.features-item .features-number::after {
-    content: " \2014";
+.features-item .features-number{
+    padding-bottom: 5px;
 }
 
 /* блок заказа гостиниц */
@@ -314,7 +345,7 @@ a {
 
 .booking-first-container {
     padding-top: 50px;
-    padding-bottom: 45px;
+    padding-bottom: 47px;
 }
 
 .booking b {
@@ -325,6 +356,8 @@ a {
 }
 
 .booking p {
+    margin: 0;
+    padding-top: 25px;
     line-height: 1.71;
     color: #333333;
 }
@@ -333,12 +366,12 @@ a {
     display: none;
 }
  */
+
 .booking-button {
-    display: inline-block;
+    display: block;
     width: 568px;
-    margin: 0 auto;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    min-height: 56px;
+    padding-top: 29px;
     font-size: 21px;
     line-height: 1.24;
     font-weight: bold;
@@ -350,7 +383,7 @@ a {
 .booking-form {
     position: absolute;
     width: 568px;
-    top: 285px;
+    top: 290px;
     padding: 55px;
 
     background-color: #ffffff;
@@ -375,12 +408,77 @@ a {
 
 .booking-form label {
     display: block;
+    flex-shrink: 0;
     width: 112px;
     padding: 6px 15px 6px 0;
 }
 
+.booking-form .booking-input-wrapper {
+    width: 346px;
+}
+
 .booking-container-column {
     display: flex;
+}
+
+.booking-form .booking-input {
+    width: 100%;
+    min-height: 38px;
+    padding: 6px 15px;
+    padding-right: 45px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 1.86;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+
+    background-color: #f2f2f2;
+}
+
+.booking-form .booking-input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-form .booking-input:focus {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+          box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+.booking-form .booking-input::placeholder {
+    color: #000000;
+}
+
+.booking-form .booking-input-wrapper-calendar {
+    position: relative;
+    width: 100%;
+}
+
+.booking-input-wrapper-calendar .calendar-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39px;
+    height: 38px;
+    padding: 0;
+    border: 0;
+
+    background-color: transparent;
+}
+
+.booking-input-wrapper-calendar .calendar-icon {
+    fill: #cacaca;
+}
+
+.booking-input-wrapper-calendar .calendar-icon:hover {
+    fill: #000000;
+}
+
+.booking-input-wrapper-calendar .calendar-icon:active {
+    fill: #81b3d2;
 }
 
 .booking-form input[type=submit] {
