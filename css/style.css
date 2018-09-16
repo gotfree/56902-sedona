@@ -492,9 +492,11 @@ a {
     text-align: center;
 }
 
-.booking-container-column-2 label {
+.booking-form .children-label {
     text-align: center;
-    padding-right: 10px;
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 12px;
     width: 50%;
 }
 
