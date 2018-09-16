@@ -362,10 +362,6 @@ a {
     color: #333333;
 }
 
-/* .js .booking-form {
-    display: none;
-}
- */
 .booking-map-wrapper {
     position: relative;
     display: block;
@@ -401,7 +397,6 @@ a {
     padding: 55px;
 
     background-color: #ffffff;
-    outline: 1px solid red;
     box-sizing: border-box;
 }
 
@@ -414,10 +409,8 @@ a {
     line-height: 1.86;
     color: #000000;
     box-sizing: border-box;
-    outline: 1px dashed green;
 }
 .booking-form .booking-number-container {
-    justify-content: space-between;
     margin-bottom: 55px;
 }
 
@@ -475,7 +468,7 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     border: 0;
-    outline: 0;
+/*     outline: 0; */
 
     background-color: #f2f2f2;
 }
@@ -483,9 +476,19 @@ a {
 .booking-container-column .booking-input {
     width: 38px;
     height: 38px;
+    margin: 0;
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .booking-form .booking-input:hover {
@@ -504,7 +507,7 @@ a {
 
 .booking-input-wrapper-counter {
     display: flex;
-    width: 114px;
+    width: 100%;
 }
 
 .booking-control {
@@ -517,8 +520,6 @@ a {
     border: 0;
 }
 
-
-
 .booking-control-minus:before {
     content: "";
     position: absolute;
@@ -529,7 +530,6 @@ a {
     border-radius: 1px;
     background-color: #a9a9a9;
 }
-
 
 .booking-control-plus:before {
     content: "";
@@ -553,15 +553,28 @@ a {
     background-color: #a9a9a9;
 }
 
-.booking-control-plus {}
+.booking-control-minus:hover:before{
+    background-color: #000000;
+}
 
-.booking-container-column-2 label {
-/*     width: 40px; */
+.booking-control-plus:hover:after,
+.booking-control-plus:hover:before{
+    background-color: #000000;
+}
+
+.booking-control-minus:active:before{
+    background-color: #81b3d2;
+}
+
+.booking-control-plus:active:after,
+.booking-control-plus:active:before{
+    background-color: #81b3d2;
 }
 
 
-
-
+.booking-container-column-2 label {
+    text-align: center;
+}
 
 
 .booking-form input[type=submit] {
@@ -579,50 +592,6 @@ a {
 
 }
 
-/* .booking-form input[type=text],
-.booking-form input[type=number] {
-    min-height: 38px;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-}
-
-.booking-form input[type=text] {
-    position: relative;
-    width: 346px;
-}
-
-.booking-form input[type=submit] {
-    font-size: 21px;
-    line-height: 1.24;
-    font-weight: bold;
-    color: #ffffff;
-
-    background-color: #81b3d2;
-}
-
-.booking-form button {
-    position: absolute;
-    width: 33px;
-    height: 30px;
-    right: 70px;
-    border: 0;
-    fill: #cacaca;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-.booking-form button:hover {
-    fill: #000000;
-}
-
-.booking-form button:active {
-    fill: #81b3d2;
-} */
-
-
-
 /*============================================
 Стили подвала
 ============================================*/
@@ -634,7 +603,6 @@ a {
     width: 1200px;
     min-height: 120px;
     background-color: #ffffff;
-    outline: 1px dotted red;
 }
 
 .footer-hash {
@@ -654,12 +622,10 @@ a {
     margin-left: 26px;
     padding: 0;
     list-style: none;
-    outline: 1px solid green;
 }
 
 .social-list li {
     margin-right: 6px;
-    outline: 1px solid blue;
 }
 
 .social-list li:last-child {
@@ -713,35 +679,33 @@ a {
 /*============================================
 Стили страницы отелей
 ============================================*/
-.inner-booking-form .container-padded {
+.filter {
+    min-height: 160px;
+    padding: 27px 0 30px;
+    color: #ffffff;
     background-image: url("../img/filter_bg.jpg");
     background-repeat: no-repeat;
     background-position: 0 -100px;
 }
 
-.inner-booking-form .flex-container {
+.filter .flex-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     box-sizing: border-box;
 }
 
 .inner-booking-form .booking-fieldset {
+    min-width: 240px;
     margin: 0;
     padding: 0;
     bottom: 0;
 }
 
 .inner-booking-form .booking-fieldset-2 {
-    margin-left: 115px;
+    margin-left: 72px;
 }
 
 .inner-booking-form .booking-fieldset-3 {
-    margin-left: 350px;
-}
-
-.filter {
-    color: #ffffff;
+    min-width: 276px;
 }
 
 .filter legend {
