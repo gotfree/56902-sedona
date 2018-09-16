@@ -880,7 +880,7 @@ input::-webkit-inner-spin-button {
 
 .btn-transparent {
   display: block;
-  padding: 6px 30px;
+  padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
   color: hsl(0, 0%, 100%);
@@ -1041,9 +1041,13 @@ input::-webkit-inner-spin-button {
 
 .hotel-list .hotel-list-item {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-list-item-2 {
+    padding-top: 0;
 }
 
 .hotel-list img {
@@ -1087,7 +1091,7 @@ input::-webkit-inner-spin-button {
 .hotel-buttons .button {
     display: inline-block;
     vertical-align: top;
-    padding: 3px 17px;
+    padding: 4px 17px;
     border: 0;
     font-family: inherit;
     font-size: inherit;
@@ -1148,6 +1152,8 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     justify-content: space-between;
     margin-left: auto;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
 }
 
 .hotel-stars {
@@ -1176,7 +1182,7 @@ input::-webkit-inner-spin-button {
     display: inline-block;
     vertical-align: top;
     padding: 3px 14px;
-    min-width: 110px;
+    min-width: 90px;
     align-self: flex-end;
     background-color: #f2f2f2;
 }
