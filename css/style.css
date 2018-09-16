@@ -697,25 +697,82 @@ input::-webkit-inner-spin-button {
     min-width: 240px;
     margin: 0;
     padding: 0;
-    bottom: 0;
+    border: 0;
 }
 
 .inner-booking-form .booking-fieldset-2 {
-    margin-left: 72px;
+    margin-left: 15px;
 }
 
 .inner-booking-form .booking-fieldset-3 {
     min-width: 276px;
+    margin-left: auto;
 }
 
-.filter legend {
+.filter .fieldset-legend {
     font-size: 16px;
     line-height: 1.31;
     font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
 }
 
-.filter ul {
+.filter .filter-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.filter .filter-item {
+    margin-bottom: 23px;
+}
+
+.filter .filter-item:last-child {
+    margin-bottom: 0;
+}
+
+.filter .filter-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.filter .filter-checkbox-label {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    user-select: none;
+}
+
+.filter .filter-checkbox-label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 23px 23px;
+}
+
+.filter-checkbox:checked ~ .filter-checkbox-label:before {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
+    background-size: 27px 23px;
 }
 
 .filter-info {
