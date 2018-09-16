@@ -64,15 +64,29 @@
                                         </li>
                                     </ul>
                                 </fieldset>
-                                <fieldset class="booking-fieldset booking-fieldset-3">
-                                    <legend class="fieldset-legend">Стоимость в сутки(р):</legend>
-                                    <div class="pricing-form-block">
-                                        <input id="pricing-field" type="range" min="0" max="5000" step="500" name="cost-per-day">
-                                        <span>от: <output></output></span>
-                                        <span>до: <output></output></span>
-                                    </div>
-                                    <input class="button" type="submit" value="Показать">
-                                </fieldset>
+                                <div class="range-container">
+                                    <fieldset class="range">
+                                        <legend class="range-title">Стоимость в сутки (<span aria-label="в рублях">р</span>):</legend>
+                                        <div class="range-controls">
+                                            <span>
+                                                <label class="range-label range-label-min" for="price-min">от</label>
+                                                <output class="range-output" for="price-min" aria-hidden="true"></output>
+                                            </span>
+                                            <input class="range-input visually-hidden" id="price-min" type="range" name="price" min="0" max="5000" step="100" value="0">
+                                            <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
+                                            <span>
+                                                <label class="range-label range-label-max" for="price-max">до</label>
+                                                <output class="range-output" for="price-max" aria-hidden="true"></output>
+                                            </span>
+                                            <input class="range-input visually-hidden" id="price-max" type="range" name="price" min="0" max="5000" step="100" value="3000">
+                                            <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
+                                            <div class="range-scale">
+                                                <div class="range-bar"></div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <button class="btn-transparent" type="submit">Показать</button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -80,27 +94,35 @@
                 <section class="filter-info">
                     <div class="container-padded">
                         <div class="flex-container">
-                            <div class="filter-sort">
+                            <div class="filter-title">
                                 <h2 class="visually-hidden">Инфо фильтра</h2>
-                                <p class="filter-search-results">
-                                    <b>найдено:</b>
-                                    <span class="filter-number-of-items">3</span>
+                                <p class="filter-search-results">найдено:<span class="filter-number-of-items"> 3</span>
                                 </p>
                             </div>
-                            <div class="filter-sort">
-                                <p>сортировка:</p>
+                            <div class="filter-type">
                                 <ul class="sort-list">
-                                    <li class="sort-measure"><a href="#">По цене</a></li>
-                                    <li class="sort-measure"><a href="#">По типу</a></li>
-                                    <li class="sort-measure"><a href="#">По рейтингу</a></li>
-                                    <li class="sort-measure">
-                                        <a href="#" class="triangle triangle-top">
-                                            <span class="visually-hidden">по возрастанию</span>
+                                    <li class="sort-list-title">сортировка:</li>
+                                    <li class="sort-item sort-item-1">
+                                        <a class="sort-list-link sort-list-link-active" href="#">По цене</a>
+                                    </li>
+                                    <li class="sort-item sort-item-2">
+                                        <a class="sort-list-link" href="#">По типу</a>
+                                    </li>
+                                    <li class="sort-item sort-item-3">
+                                        <a class="sort-list-link" href="#">По рейтингу</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-sort">
+                                <ul class="filter-sort-list">
+                                    <li class="triangle-item">
+                                        <a class="triangle triangle-up" href="#">
+                                            по возрастанию
                                         </a>
                                     </li>
-                                    <li class="sort-measure">
-                                        <a href="#" class="triangle triangle-bot">
-                                            <span class="visually-hidden">по убыванию</span>
+                                    <li class="triangle-item">
+                                        <a class="triangle triangle-down triangle-active" href="#">
+                                            по убыванию
                                         </a>
                                     </li>
                                 </ul>
@@ -117,7 +139,7 @@
                                 </div>
                                 <div class="hotel-info">
                                     <h3 class="hotel-name">
-                                    <a href="#">Amara Resort &amp; Spa</a>
+                                        <a href="#">Amara Resort &amp; Spa</a>
                                     </h3>
                                     <p class="hotel-details">
                                         <span class="hotel-type">Гостиница</span>
@@ -129,9 +151,13 @@
                                     </p>
                                 </div>
                                 <div class="hotel-rating">
-                                    <p class="hotel-stars hotel-stars-4">
+                                    <span class="hotel-stars hotel-stars-4">
                                         <span class="visually-hidden">Количество звезд: 4</span>
-                                    </p>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                    </span>
                                     <mark class="rating-text">Рейтинг: 8,5</mark>
                                 </div>
                             </li>
@@ -153,9 +179,12 @@
                                     </p>
                                 </div>
                                 <div class="hotel-rating">
-                                    <p class="hotel-stars hotel-stars-4">
+                                    <span class="hotel-stars hotel-stars-3">
                                         <span class="visually-hidden">Количество звезд: 3</span>
-                                    </p>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                    </span>
                                     <mark class="rating-text">Рейтинг: 8,9</mark>
                                 </div>
                             </li>
@@ -177,9 +206,11 @@
                                     </p>
                                 </div>
                                 <div class="hotel-rating">
-                                    <p class="hotel-stars hotel-stars-4">
+                                    <span class="hotel-stars hotel-stars-2">
                                         <span class="visually-hidden">Количество звезд: 2</span>
-                                    </p>
+                                        <span class="star">*</span>
+                                        <span class="star">*</span>
+                                    </span>
                                     <mark class="rating-text">Рейтинг: 9,2</mark>
                                 </div>
                             </li>
@@ -206,5 +237,6 @@
                 </p>
             </footer>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
