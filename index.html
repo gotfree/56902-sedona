@@ -117,11 +117,19 @@
                         <div class="booking-container booking-number-container">
                             <div class="booking-container-column booking-container-column-1">
                                 <label for="adults-field">Взрослые:</label>
-                                <input id="adults-field" type="number" name="adults" min="1" max="10" step="1">
+                                <div class="booking-input-wrapper booking-input-wrapper-counter">
+                                    <button class="booking-control booking-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                                    <input class="booking-input" id="adults-field" type="number" name="adults" min="1" max="10" step="1">
+                                    <button class="booking-control booking-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                                </div>
                             </div>
                             <div class="booking-container-column booking-container-column-2">
                                 <label for="children-field">Дети:</label>
-                                <input id="children-field" type="number" name="children" min="0" max="10" step="1">
+                                <div class="booking-input-wrapper booking-input-wrapper-counter">
+                                    <button class="booking-control booking-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                                    <input class="booking-input" id="children-field" type="number" name="children" min="0" max="10" step="1">
+                                    <button class="booking-control booking-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                                </div>
                             </div>
                         </div>
                         <input class="button booking-btn-container" type="submit" value="Найти">
