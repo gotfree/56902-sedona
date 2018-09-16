@@ -366,11 +366,19 @@ a {
     display: none;
 }
  */
+.booking-map-wrapper {
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 557px;
+}
 
 .booking-button {
     display: block;
     width: 568px;
     min-height: 56px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 29px;
     font-size: 21px;
     line-height: 1.24;
@@ -378,6 +386,12 @@ a {
     color: #ffffff;
 
     background-color: #766357;
+}
+
+.booking-img {
+    position: absolute;
+    top: 85px;
+    left: 0;
 }
 
 .booking-form {
@@ -547,8 +561,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 1200px;
     min-height: 120px;
     background-color: #ffffff;
+    outline: 1px dotted red;
 }
 
 .footer-hash {
@@ -565,12 +582,15 @@ a {
 .footer-social .social-list {
     display: flex;
     margin: 0;
+    margin-left: 26px;
     padding: 0;
     list-style: none;
+    outline: 1px solid green;
 }
 
 .social-list li {
     margin-right: 6px;
+    outline: 1px solid blue;
 }
 
 .social-list li:last-child {
@@ -615,6 +635,10 @@ a {
     padding-right: 8px;
     line-height: 1.86;
     color: #000000;
+}
+
+.footer-copyright .html-academy-link {
+    padding-top: 6px;
 }
 
 /*============================================
