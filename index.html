@@ -93,7 +93,7 @@
                     </div>
                     <form action="https://echo.htmlacademy.ru" method="get" class="booking-form">
                         <div class="booking-container">
-                            <label for="entry-date-field">Дата заезда:</label>
+                            <label class="entry-label" for="entry-date-field">Дата заезда:</label>
                             <div class="booking-input-wrapper booking-input-wrapper-calendar">
                                 <input class="booking-input" id="entry-date-field" type="text" name="checkin-date" placeholder="24 апреля 2017">
                                 <button class="calendar-button" type="button">
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <div class="booking-container">
-                            <label for="exit-date-field">Дата выезда:</label>
+                            <label class="exit-label" for="exit-date-field">Дата выезда:</label>
                             <div class="booking-input-wrapper booking-input-wrapper-calendar">
                                 <input class="booking-input" id="exit-date-field" type="text" name="checkout-date" placeholder="4 июля 2017">
                                 <button class="calendar-button" type="button">
@@ -114,18 +114,18 @@
                         </div>
                         <div class="booking-container booking-number-container">
                             <div class="booking-container-column booking-container-column-1">
-                                <label for="adults-field">Взрослые:</label>
-                                <div class="booking-input-wrapper booking-input-wrapper-counter">
+                                <label class="adults-label" for="adults-field">Взрослые:</label>
+                                <div class="booking-input-wrapper-counter">
                                     <button class="booking-control booking-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                                    <input class="booking-input" id="adults-field" type="number" name="adults" min="1" max="10" step="1">
+                                    <input class="booking-input-counter" id="adults-field" type="number" name="adults" min="1" max="10" step="1">
                                     <button class="booking-control booking-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
                                 </div>
                             </div>
                             <div class="booking-container-column booking-container-column-2">
                                 <label class="children-label" for="children-field">Дети:</label>
-                                <div class="booking-input-wrapper booking-input-wrapper-counter">
+                                <div class="booking-input-wrapper-counter">
                                     <button class="booking-control booking-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                                    <input class="booking-input" id="children-field" type="number" name="children" min="0" max="10" step="1">
+                                    <input class="booking-input-counter" id="children-field" type="number" name="children" min="0" max="10" step="1">
                                     <button class="booking-control booking-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
                                 </div>
                             </div>
