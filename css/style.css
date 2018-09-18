@@ -431,7 +431,7 @@ a {
     flex-shrink: 0;
     width: 112px;
     text-align: left;
-    padding: 6px 0 6px 1px;
+    padding: 6px 0 6px 2px;
 }
 
 .booking-container-column {
@@ -471,7 +471,7 @@ a {
 .booking-form .booking-input {
     width: 100%;
     min-height: 38px;
-    padding: 6px 12px;
+    padding: 6px 11px;
     padding-right: 45px;
     box-sizing: border-box;
 
@@ -480,16 +480,16 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     border: 0;
-/*     outline: 0; */
 
     background-color: #f2f2f2;
 }
 
 .booking-container-column .booking-input-counter {
+    width: 38px;
     min-height: 38px;
     margin: 0;
-/*     padding-left: 5px;
-padding-right: 5px; */
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
 
     font-size: 14px;
@@ -499,6 +499,14 @@ padding-right: 5px; */
     border: 0;
     box-sizing: border-box;
     background-color: #f2f2f2;
+}
+
+.booking-container-column .adults-label {
+    padding-right: 40px;
+}
+
+.booking-container-column .children-label {
+    padding-right: 27px;
 }
 
 input[type="number"] {
