@@ -88,8 +88,7 @@
                         <p>укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                     </div>
                     <div class="booking-map-wrapper">
-                        <!-- HREF - ?? -->
-                        <a class="button booking-button">поиск гостиницы в Седоне</a>
+                        <a href="#" class="button booking-button">поиск гостиницы в Седоне</a>
                         <img class="booking-img" src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
                     </div>
                     <form action="https://echo.htmlacademy.ru" method="get" class="booking-form">
@@ -161,7 +160,12 @@
 
             link.addEventListener("click", function (evt) {
                 evt.preventDefault();
-                bookingForm.classList.add("form-show");
+                if(bookingForm.classList.contains("form-show")) {
+                    bookingForm.classList.remove("form-show");
+                }
+                else {
+                    bookingForm.classList.add("form-show");
+                }
             });
         </script>
     </body>
