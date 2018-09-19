@@ -156,16 +156,13 @@
         <script>
             var link = document.querySelector(".booking-button");
             var bookingForm = document.querySelector(".booking-form");
+            var checkIn = document.querySelector("[name=checkin-date]");
             bookingForm.classList.add("form-js");
 
             link.addEventListener("click", function (evt) {
                 evt.preventDefault();
-                if(bookingForm.classList.contains("form-show")) {
-                    bookingForm.classList.remove("form-show");
-                }
-                else {
-                    bookingForm.classList.add("form-show");
-                }
+                bookingForm.classList.toggle("form-show");
+                checkIn.focus();
             });
         </script>
     </body>

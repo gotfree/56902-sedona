@@ -408,24 +408,30 @@ a {
     left: 0;
 }
 
+@keyframes show {
+    0% {top: -105px;opacity: 0}
+    100% {top: 290px;opacity: 1}
+}
+
 .booking-form {
     position: absolute;
     width: 568px;
     top: 290px;
     padding: 55px;
-
     background-color: #ffffff;
     box-sizing: border-box;
 }
 
 .form-js {
     display: none;
-    /* top: -105px;
-    z-index: -1; */
+    top: -105px;
 }
 
 .form-show {
     display: block;
+    animation: show 1s;
+    top: 290px;
+
 }
 
 
