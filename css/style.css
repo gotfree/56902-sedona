@@ -418,6 +418,18 @@ a {
     box-sizing: border-box;
 }
 
+.form-js {
+    display: none;
+    /* top: -105px;
+    z-index: -1; */
+}
+
+.form-show {
+    display: block;
+}
+
+
+
 .booking-form .booking-container {
     display: flex;
     align-items: center;
@@ -428,6 +440,7 @@ a {
     color: #000000;
     box-sizing: border-box;
 }
+
 .booking-form .booking-number-container {
     margin-bottom: 55px;
     justify-content: space-between;
