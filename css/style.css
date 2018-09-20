@@ -1,6 +1,5 @@
 /*
-- состояния
-- доп требования
+- доп требования Д11
  */
 
 
@@ -182,6 +181,7 @@ a {
     background: url("../img/welcome-bg_all-in-one.jpg");
     background-position: 0 -83px;
     background-repeat: no-repeat;
+    background-color: #668599;
 }
 
 .welcome {
@@ -906,6 +906,7 @@ input::-webkit-inner-spin-button {
     background-image: url("../img/filter_bg.jpg");
     background-repeat: no-repeat;
     background-position: 0 -100px;
+    background-color: #5D707D;
 }
 
 .filter .flex-container {
