@@ -993,7 +993,7 @@ input::-webkit-inner-spin-button {
 
 .btn-transparent {
   display: block;
-  margin-right: 7px;
+  margin-right: 9px;
   padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
@@ -1157,7 +1157,7 @@ input::-webkit-inner-spin-button {
 .hotel-list .hotel-list-item {
     display: flex;
     padding-top: 24px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1206,7 +1206,7 @@ input::-webkit-inner-spin-button {
 .hotel-buttons .button {
     display: inline-block;
     vertical-align: top;
-    padding: 4px 17px;
+    padding: 3px 17px;
     border: 0;
     font-family: inherit;
     font-size: inherit;
