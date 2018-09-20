@@ -1,8 +1,3 @@
-/*
-- доп требования Д11
- */
-
-
 @charset "UTF-8";
 
 /*============================================
@@ -166,7 +161,6 @@ a {
 Стили основного контента
 ============================================*/
 /* приветствие с фоном */
-
 .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -425,6 +419,7 @@ a {
 }
 
 .booking-button:active {
+    color: #938987;
     background-color: #503e33;
 }
 
@@ -433,6 +428,7 @@ a {
 }
 
 .booking input[type="submit"]:active {
+    color: #96bad4;
     background-color: #5496bd;
 }
 
@@ -841,15 +837,19 @@ input::-webkit-inner-spin-button {
 }
 
 .social-list .social-button {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 46px;
     height: 48px;
-    text-indent: 100%;
-    white-space: nowrap;
     overflow: hidden;
     background-color: #81b3d2;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 .social-list .social-button:last-child {
@@ -857,15 +857,15 @@ input::-webkit-inner-spin-button {
 }
 
 .social-list .social-button-tw {
-    background-image: url("../img/twitter.svg");
+
 }
 
 .social-list .social-button-fb {
-    background-image: url("../img/fb-icon.svg");
+
 }
 
 .social-list .social-button-you {
-    background-image: url("../img/youtube.svg");
+
 }
 
 .footer-copyright {
@@ -892,10 +892,21 @@ input::-webkit-inner-spin-button {
     background-color: #5496bd;
 }
 
+.social-button:active path {fill: #95b9d3;}
+
 .footer-copyright .html-academy-link {
+    width: 115px;
+    height: 41px;
     padding-top: 6px;
 }
 
+.html-academy-link:hover path {
+    fill: #81b3d2;
+}
+
+.html-academy-link:active path {
+    fill: rgba(0, 0, 0, 0.3);
+}
 /*============================================
 Стили страницы отелей
 ============================================*/
@@ -996,6 +1007,11 @@ input::-webkit-inner-spin-button {
     height: 23px;
     background-image: url("../img/checkbox-on.svg");
     background-size: 27px 23px;
+}
+
+.filter-checkbox:focus + .filter-checkbox-label:before{
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .inner-booking-form .range-container {
@@ -1109,8 +1125,6 @@ input::-webkit-inner-spin-button {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
           box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
-  cursor: -webkit-grab;
-  cursor: grab;
 }
 
 .range-lever:active {
@@ -1119,7 +1133,8 @@ input::-webkit-inner-spin-button {
 }
 
 .range-lever:hover {
-  background: hsl(209, 64%, 31%);
+    width: 21px;
+    height: 21px;
 }
 
 .range-lever-min {
@@ -1227,14 +1242,15 @@ input::-webkit-inner-spin-button {
     border-color: transparent;
 }
 
+.sort-list-link:hover {
+    color: #81b3d1;
+}
+
 .sort-list-link:active {
     color: #000000;
     border-color: transparent;
 }
 
-.sort-list-link:hover {
-    color: #81b3d1;
-}
 
 .filter-sort {
     margin-top: 3px;
@@ -1400,15 +1416,12 @@ input::-webkit-inner-spin-button {
     background-color: #81b3d2;
 }
 
-.button-confirm {
-    background-color: #766357;
-}
-
 .button-action:hover {
     background-color: #669ec0;
 }
 
 .button-action:active {
+    color: #95b9d3;
     background-color: #5496bd;
 }
 
@@ -1417,6 +1430,7 @@ input::-webkit-inner-spin-button {
 }
 
 .button-confirm:active {
+    color: #938987;
     background-color: #503e33;
 }
 
