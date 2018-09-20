@@ -1,7 +1,6 @@
 /*
-- pixel perfect
 - состояния
-- ie11 и firefox
+- доп требования
  */
 
 
@@ -46,7 +45,8 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .container-padded {
@@ -62,7 +62,8 @@ a {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -75,7 +76,8 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -104,6 +106,8 @@ a {
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -165,8 +169,13 @@ a {
 /* приветствие с фоном */
 
 .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .main-image {
     min-height: 508px;
@@ -208,8 +217,13 @@ a {
 }
 
 .features-list .features-item-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 256px;
     padding-left: 60px;
     padding-right: 860px;
@@ -222,8 +236,13 @@ a {
 }
 
 .features-list .features-item-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 256px;
     padding-right: 49px;
     padding-left: 848px;
@@ -236,14 +255,21 @@ a {
 }
 /* ---------------- */
 .features-inner-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 2px;
     background-color: #ffffff;
 }
 
 .features-inner-list .features-inner-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
     padding-top: 145px;
     padding-bottom: 66px;
@@ -287,6 +313,8 @@ a {
 }
 /* -------------------- */
 .features-list-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
 }
@@ -337,9 +365,16 @@ a {
 /* блок заказа гостиниц */
 .booking {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     background-color: #ffffff;
 }
@@ -412,6 +447,17 @@ a {
     left: 0;
 }
 
+@-webkit-keyframes show {
+    0% {
+        top: -105px;
+        opacity: 0
+    }
+    100% {
+        top: 290px;
+        opacity: 1
+    }
+}
+
 @keyframes show {
     0% {
         top: -105px;
@@ -423,10 +469,11 @@ a {
     }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
     0%,
     100% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 
     10%,
@@ -434,14 +481,41 @@ a {
     50%,
     70%,
     90% {
-        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
     }
 
     20%,
     40%,
     60%,
     80%  {
-        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80%  {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
     }
 }
 
@@ -452,7 +526,8 @@ a {
     left: 316px;
     padding: 55px;
     background-color: #ffffff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     z-index: 4;
 }
 
@@ -463,12 +538,14 @@ a {
 
 .form-show {
     display: block;
-    animation: show 1s;
+    -webkit-animation: show 1s;
+            animation: show 1s;
     top: 290px;
 }
 
 .form-error {
-    animation: shake 0.6s;
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
 }
 
 .sedona-gmap {
@@ -482,33 +559,45 @@ a {
 
 
 .booking-form .booking-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0;
     margin-bottom: 29px;
     font-weight: bold;
     line-height: 1.86;
     color: #000000;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .booking-form .booking-number-container {
     margin-bottom: 55px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .booking-form .entry-label,
 .booking-form .exit-label {
     display: block;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 112px;
     text-align: left;
     padding: 6px 0 6px 2px;
 }
 
 .booking-container-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .booking-form .booking-input-wrapper {
@@ -545,7 +634,8 @@ a {
     min-height: 38px;
     padding: 6px 11px;
     padding-right: 45px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     font-size: 14px;
     line-height: 1.86;
@@ -569,7 +659,8 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     border: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #f2f2f2;
 }
 
@@ -596,7 +687,20 @@ input::-webkit-inner-spin-button {
 
 .booking-form .booking-input:focus {
     background-color: #fff;
-    box-shadow: inset 0 0 0 2px #e5e5e5;
+    -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+            box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+.booking-form .booking-input::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.booking-form .booking-input:-ms-input-placeholder {
+    color: #000000;
+}
+
+.booking-form .booking-input::-ms-input-placeholder {
+    color: #000000;
 }
 
 .booking-form .booking-input::placeholder {
@@ -604,13 +708,16 @@ input::-webkit-inner-spin-button {
 }
 
 .booking-input-wrapper-counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .booking-control {
     position: relative;
     display: block;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
@@ -687,9 +794,15 @@ input::-webkit-inner-spin-button {
 Стили подвала
 ============================================*/
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     z-index: 3;
     width: 1200px;
@@ -710,6 +823,8 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-social .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     margin-left: 26px;
@@ -754,8 +869,12 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 101px;
 }
 
@@ -790,8 +909,11 @@ input::-webkit-inner-spin-button {
 }
 
 .filter .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .inner-booking-form .booking-fieldset {
@@ -835,7 +957,8 @@ input::-webkit-inner-spin-button {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -847,7 +970,10 @@ input::-webkit-inner-spin-button {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 40px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .filter .filter-checkbox-label:before {
@@ -872,9 +998,16 @@ input::-webkit-inner-spin-button {
 }
 
 .inner-booking-form .range-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
 }
 
@@ -896,8 +1029,11 @@ input::-webkit-inner-spin-button {
 
 .range-controls {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 32px;
   margin-top: 9px;
   margin-bottom: 54px;
@@ -917,7 +1053,9 @@ input::-webkit-inner-spin-button {
   width: 2px;
   height: 22px;
   background: hsl(0, 0%, 100%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .range-label {
@@ -958,7 +1096,8 @@ input::-webkit-inner-spin-button {
 }
 
 .range-lever {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   bottom: -32px;
   z-index: 2;
@@ -967,11 +1106,14 @@ input::-webkit-inner-spin-button {
   background: hsl(0, 0%, 67%);
   border: 8px solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
+          box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .range-lever:active {
+  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -988,7 +1130,8 @@ input::-webkit-inner-spin-button {
 }
 
 .range-input:focus + .range-lever {
-  box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.5);
+  -webkit-box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.5);
+          box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.5);
 }
 
 .btn-transparent {
@@ -1025,8 +1168,12 @@ input::-webkit-inner-spin-button {
 }
 
 .filter-info .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 7px;
 
 }
@@ -1045,6 +1192,8 @@ input::-webkit-inner-spin-button {
 }
 
 .sort-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -1093,6 +1242,8 @@ input::-webkit-inner-spin-button {
 }
 
 .filter-sort-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -1155,6 +1306,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-list .hotel-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 24px;
     padding-bottom: 17px;
@@ -1189,6 +1342,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-list .hotel-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
     margin-bottom: 14px;
@@ -1200,6 +1355,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-list .hotel-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1263,19 +1420,32 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-list .hotel-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: auto;
     -ms-align-items: flex-end;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .hotel-stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 114px;
     margin-top: 5px;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .star {
@@ -1299,6 +1469,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 15px;
     padding: 3px 14px;
     min-width: 80px;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     background-color: #f2f2f2;
 }
