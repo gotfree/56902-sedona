@@ -693,7 +693,7 @@ input::-webkit-inner-spin-button {
     position: relative;
     z-index: 3;
     width: 1200px;
-    min-height: 120px;
+    height: 120px;
     background-color: #ffffff;
     opacity: 0.9;
 }
@@ -881,6 +881,7 @@ input::-webkit-inner-spin-button {
 /* ====================================================== */
 .range {
   width: 318px;
+  margin: 0;
   padding: 0;
   border: none;
   color: hsl(0, 0%, 100%);
@@ -902,6 +903,10 @@ input::-webkit-inner-spin-button {
   margin-bottom: 54px;
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 2px;
+}
+
+.range-controls span {
+    padding-left: 10px;
 }
 
 .range-controls::after {
@@ -988,7 +993,8 @@ input::-webkit-inner-spin-button {
 
 .btn-transparent {
   display: block;
-  padding: 6px 35px;
+  margin-right: 7px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: hsl(0, 0%, 100%);
@@ -1015,12 +1021,13 @@ input::-webkit-inner-spin-button {
     color: #000000;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
 }
 
 .filter-info .flex-container {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 7px;
 
 }
 
@@ -1149,8 +1156,8 @@ input::-webkit-inner-spin-button {
 
 .hotel-list .hotel-list-item {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 24px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1267,7 +1274,7 @@ input::-webkit-inner-spin-button {
 .hotel-stars {
     display: flex;
     width: 114px;
-    margin-top: 4px;
+    margin-top: 5px;
     justify-content: flex-end;
 }
 
@@ -1279,7 +1286,7 @@ input::-webkit-inner-spin-button {
     background-image: url("../img/star.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin-left: 5px;
+    margin-left: 6px;
 }
 
 .star:first-child {
@@ -1289,8 +1296,9 @@ input::-webkit-inner-spin-button {
 .rating-text {
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 15px;
     padding: 3px 14px;
-    min-width: 90px;
+    min-width: 80px;
     align-self: flex-end;
     background-color: #f2f2f2;
 }
