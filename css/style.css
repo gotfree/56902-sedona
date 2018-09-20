@@ -546,6 +546,7 @@ a {
 
 .sedona-gmap {
     display: none;
+    border: 0;
 }
 
 .iframe-js {
